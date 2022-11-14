@@ -17,4 +17,5 @@ $char = 50; // The ASCII Character 50 is 2
 //printf(" Signed decimal number: %d",$num2); // Signed decimal number
 printf("Scientific notation (lowercase):%e",$num1); // Scientific notation (lowercase)
 echo "\n";
-printf("Scientific notation (uppercase):%E",$num1); // Scientific notation (uppercase)
+printf("Scientific notation (uppercase):%E",$num1); // Scientific notation (uppercase);
+
