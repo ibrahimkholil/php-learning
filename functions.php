@@ -1,16 +1,15 @@
 <?php
 /*
- * Factorial check by number
- * With Type hinting we can specify the expected data type (arrays, objects, interface, etc.)
- * for an argument in a function declaration. This practice can be most advantageous because
- * it results in better code organization and improved error messages.
+ * Unlimited arguments pass
+ * variable-length arguments
+ * ... is an array
  */
 
-function factorial (int $n){
-	$result = 1;
-	for ($i = $n ; $i> 1 ; $i--){
-		$result *= $i;
-	}
-	return $result;
+function sum(  int ...$number ):int {
+    $result = 0;
+    for ( $i = 0; $i < count($number) ; $i++){
 
+       $result +=$number[$i];
+    }
+    return $result;
 }
