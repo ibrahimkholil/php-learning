@@ -20,7 +20,7 @@ for( $i = 0; $i <=15; $i++){
    $n = $n2;
    $n2 = $temp;
 }
-// Fibonacci series by recusrive 
+// Fibonacci series by recusrive  F(n-1) + F(n-2)
 function fibonacci($n){
   if ($n <=1) {
     return $n;
