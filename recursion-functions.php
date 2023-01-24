@@ -12,21 +12,25 @@ function recusiveNumber($counter,$end,$step = 1){
 // recusiveNumber(10,27,4);
 // fibonacci loop Fn = F(n-1) + F(n-2)
 
-$n = 1;
-$n2  = 0;
-for( $i = 0; $i <=15; $i++){
-   echo $n2 .",";
-   $temp = $n + $n2;
-   $n = $n2;
-   $n2 = $temp;
-}
+// $n = 1;
+// $n2  = 0;
+// for( $i = 0; $i <=15; $i++){
+//    echo $n2 .",";
+//    $temp = $n + $n2;
+//    $n = $n2;
+//    $n2 = $temp;
+// }
 // Fibonacci series by recusrive  F(n-1) + F(n-2)
 function fibonacci($n){
   if ($n <=1) {
     return $n;
   }else{
     return (fibonacci($n-1) + fibonacci($n - 2));
+   
   }
 }
 
-fibonacci(15);
+for ($i=0; $i<=15; $i++) {
+  echo " ". fibonacci( $i );
+}
+
